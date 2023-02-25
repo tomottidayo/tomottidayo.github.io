@@ -16,7 +16,17 @@
             </h1>
             <p class="is-size-4">鼻までマスクをしていたら、下のボタンをクリックしてください。</p>
             <a href="invoice.html" class="button is-primary is-large">鼻までマスクできてる！</a>
-            <p class="is-size-4">※鼻までマスクできていない人は、キーを押してください。</p>
+            <p class="is-size-4">※鼻までマスクできていない人は、enterキーを押してください。</p>
+            <script>
+                // ドキュメント内のキーイベントを待ちます
+                document.addEventListener("keydown", function (event) {
+                    // キーコードがEnterキーに対応する13である場合
+                    if (event.keyCode === 13) {
+                        // 新しいURLに移動します
+                        window.location.href = "invoicee.html";
+                    }
+                });
+            </script>
         </div>
     </section>
 </body>
