@@ -15,20 +15,24 @@
                 おめでとうございます。あなたはしっかりと鼻までマスクをしていますね。
             </h1>
             <p class="is-size-4">しっかり鼻までマスクができているので、ピーマンを授けます。</p>
-             <audio id="aAudio">
-                <source src="https://soundeffect-lab.info/sound/voice/mp3/people/people-performance-cheer1.mp3"type="audio/mpeg">
+    <audio id="myAudio">
+                <source src="https://soundeffect-lab.info/sound/voice/mp3/people/people-performance-cheer1.mp3" type="audio/mpeg">
                 <source src="https://soundeffect-lab.info/sound/voice/mp3/people/people-performance-cheer1.mp3" type="audio/ogg">
                 <source src="https://soundeffect-lab.info/sound/voice/mp3/people/people-performance-cheer1.mp3" type="audio/wav">
                 Your browser does not support the audio element.
-                 <script>
-                        // クリックイベントを待ちます
+            </audio>
+            <script>
+                // クリックイベントを待ちます
                 document.addEventListener("click", function (event) {
                     // オーディオ要素を取得します
-                    var audio = document.getElementById("aAudio");
+                    var audio = document.getElementById("myAudio");
                     //d オーディオを再生します
+                    audio.play();
+                });
                  </script>
             </audio>
             </div>
         </section>
 </body>
 </html>
+            
